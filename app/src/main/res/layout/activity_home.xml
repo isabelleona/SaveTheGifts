@@ -11,76 +11,91 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="cursive"
         android:text="Save the Gifts"
-        android:textSize="32sp"/>
+        android:textSize="50sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Santa's workshop exploded the night before Christmas, help him catch the gifts
-that are now flying around! Earn as many points to become elf if the year, and be careful, you don't
+that are now flying around! Earn as many points to become Elf of the Year, but be careful, you don't
 want to catch coal or else Santa is going to get mad."
         android:textSize="20sp"
-        android:paddingTop="30sp"/>
+        android:paddingTop="15sp"
+        android:gravity="center"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Press down to move left - Release to move right"
-        android:textSize="18sp"
+        android:text="Press down: move Left - Release: move Right"
+        android:fontFamily="cursive"
+        android:textSize="22sp"
         android:paddingTop="20sp"/>
 
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp">
+        android:layout_marginTop="20dp">
 
-        <TableRow android:gravity="center_vertical">
+        <TableRow android:gravity="center">
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+
                 android:src="@drawable/gift1"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/gift2"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/gift3"/>
+        </TableRow>
+
+        <TableRow android:gravity="center_vertical">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="10 points"
                 android:textSize="15sp"
-                android:paddingLeft="10dp"/>
-        </TableRow>
-
-        <TableRow android:gravity="center_vertical">
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/gift2"/>
+                android:fontFamily="cursive"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="20 points"
                 android:textSize="15sp"
-                android:paddingLeft="10dp"/>
-        </TableRow>
-
-        <TableRow android:gravity="center_vertical">
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/gift3"/>
+                android:fontFamily="cursive"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="30 points"
                 android:textSize="15sp"
-                android:paddingLeft="10dp"/>
+                android:fontFamily="cursive"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"/>
         </TableRow>
     </TableLayout>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:fontFamily="cursive"
+        android:onClick="startGame"
         android:text="START"
-        android:textSize="30dp"
-        android:layout_marginTop="40dp"
-        android:onClick="startGame"/>
+        android:textSize="40dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/gift1"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/santa"/>
 
 </LinearLayout>

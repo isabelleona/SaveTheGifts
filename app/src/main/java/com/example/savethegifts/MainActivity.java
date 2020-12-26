@@ -187,7 +187,7 @@ public class MainActivity extends AppCompatActivity {
         float gift2CenterX = gift2X + gift2.getWidth() / 2.0f;
         float gift2CenterY = gift2Y + gift2.getHeight() / 2.0f;
 
-        if (screenHeight >= gift2CenterY && gift2CenterY >= screenHeight-boxHeigth &&
+        if (gift2CenterY == screenHeight-boxHeigth &&
                 boxX <= gift2CenterX && gift2CenterX <= boxX + boxWidth) {
             gift2Y = screenHeight + 100.0f;
             score += 20;
@@ -209,9 +209,9 @@ public class MainActivity extends AppCompatActivity {
         float coal2CenterX = coal2X + coal2.getWidth() / 2.0f;
         float coal2CenterY = coal2Y + coal2.getHeight() / 2.0f;
 
-        if ((screenHeight >= coal1CenterY && coal1CenterY >= screenHeight-boxHeigth &&
+        if ((screenHeight -(boxHeigth/2) >= coal1CenterY && coal1CenterY >= screenHeight-boxHeigth &&
                 boxX <= coal1CenterX && coal1CenterX <= boxX + boxWidth) ||
-                (screenHeight >= coal2CenterY && coal2CenterY >= screenHeight-boxHeigth &&
+                (screenHeight -(boxHeigth/2)  >= coal2CenterY && coal2CenterY >= screenHeight-boxHeigth &&
                 boxX <= coal2CenterX && coal2CenterX <= boxX + boxWidth)) {
             //End of the game
             if (timer != null) {

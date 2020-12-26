@@ -11,8 +11,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ohh nooo...game over"
-        android:textSize="40sp"/>
+        android:text="Ohh nooo...you got Santa mad"
+        android:fontFamily="cursive"
+        android:textSize="50sp"
+        android:gravity="center"/>
 
     <TextView
         android:id="@+id/scoreLabel"
@@ -20,20 +22,30 @@
         android:layout_height="wrap_content"
         android:text="500"
         android:textSize="50sp"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="20dp"/>
 
     <TextView
         android:id="@+id/highScoreLAbel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="High Score : 800"
+        android:fontFamily="cursive"
         android:textSize="15sp"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Try Again"
-        android:layout_marginTop="40dp"
-        android:onClick="tryAgain"/>
+        android:fontFamily="cursive"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:onClick="tryAgain"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/gift1"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:src="@drawable/santa_mad"/>
 
 
 </LinearLayout>

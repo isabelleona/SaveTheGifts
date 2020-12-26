@@ -11,6 +11,7 @@
         android:id="@+id/scoreLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="cursive"
         android:padding="10dp"
         android:text="Score: 0"
         android:textSize="18sp" />
@@ -25,51 +26,53 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textSize="44sp"
-            android:text="Start" />
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:textSize="54sp"
+            android:text="Go!" />
 
         <ImageView
             android:id="@+id/bag"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:src="@drawable/bag"
             android:layout_gravity="bottom"/>
 
         <ImageView
             android:id="@+id/gift1"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:src="@drawable/gift1"/>
 
         <ImageView
             android:id="@+id/gift1_2"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:src="@drawable/gift1"/>
 
         <ImageView
             android:id="@+id/coal1"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:src="@drawable/coal"/>
 
         <ImageView
             android:id="@+id/coal2"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:src="@drawable/coal"/>
 
         <ImageView
             android:id="@+id/gift2"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:src="@drawable/gift2"/>
 
         <ImageView
             android:id="@+id/gift3"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/gift3"/>
+            android:layout_width="100dp"
+            android:layout_height="114dp"
+            android:src="@drawable/gift3" />
 
 
     </FrameLayout>
