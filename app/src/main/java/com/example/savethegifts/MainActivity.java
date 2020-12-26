@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.os.Handler;
+import android.renderscript.ScriptGroup;
 import android.view.Display;
 import android.view.MotionEvent;
 import android.view.View;
@@ -187,7 +188,7 @@ public class MainActivity extends AppCompatActivity {
         float gift2CenterX = gift2X + gift2.getWidth() / 2.0f;
         float gift2CenterY = gift2Y + gift2.getHeight() / 2.0f;
 
-        if (gift2CenterY == screenHeight-boxHeigth &&
+        if (screenHeight >= gift2CenterY && gift2CenterY >= screenHeight-boxHeigth &&
                 boxX <= gift2CenterX && gift2CenterX <= boxX + boxWidth) {
             gift2Y = screenHeight + 100.0f;
             score += 20;
@@ -218,7 +219,6 @@ public class MainActivity extends AppCompatActivity {
                 timer.cancel();
                 timer = null;
             }
-
             //Shows ResultActivity
             Intent intent = new Intent(getApplicationContext(), ResultsActivity.class);
             intent.putExtra("SCORE", score);
@@ -241,6 +241,7 @@ public class MainActivity extends AppCompatActivity {
             boxHeigth = bag.getHeight();
             boxWidth = bag.getWidth();
 
+            //Hidden Start Label
             startLabel.setVisibility(View.GONE);
 
             timer.schedule(new TimerTask() {
