@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save the Gifts"
+        android:textSize="32sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Santa's workshop exploded the night before Christmas, help him catch the gifts
+that are now flying around! Earn as many points to become elf if the year, and be careful, you don't
+want to catch coal or else Santa is going to get mad."
+        android:textSize="20sp"
+        android:paddingTop="30sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Press down to move left - Release to move right"
+        android:textSize="18sp"
+        android:paddingTop="20sp"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <TableRow android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/gift1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 points"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"/>
+        </TableRow>
+
+        <TableRow android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/gift2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20 points"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"/>
+        </TableRow>
+
+        <TableRow android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/gift3"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30 points"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:textSize="30dp"
+        android:layout_marginTop="40dp"
+        android:onClick="startGame"/>
+
+</LinearLayout>
