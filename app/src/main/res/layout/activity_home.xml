@@ -21,8 +21,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Santa's workshop exploded the night before Christmas, help him catch the gifts
-that are now flying around! Earn as many points to become Elf of the Year, but be careful, you don't
-want to catch coal or else Santa is going to get mad."
+that are now flying around and save Christmas! Earn as many points as possible,
+but be careful, you don't want to catch coal or else Santa is going to get very very mad."
         android:textSize="20sp"
         android:paddingTop="15sp"
         android:gravity="center"
@@ -34,7 +34,7 @@ want to catch coal or else Santa is going to get mad."
         android:text="Press down: move Rigth - Release: move Left"
         android:fontFamily="cursive"
         android:textSize="22sp"
-        android:paddingTop="20sp"
+        android:paddingTop="10sp"
         android:textColor="#000000"/>
 
     <TableLayout
