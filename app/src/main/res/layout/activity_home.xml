@@ -20,9 +20,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Santa's workshop exploded the night before Christmas, help him catch the gifts
-that are now flying around and save Christmas! Earn as many points as possible,
-but be careful, you don't want to catch coal or else Santa is going to get very very mad."
+        android:text="It's the night before Christmas, and Santa's workshop exploded...Hurry, Santa
+needs your help! Catch as many gifts as possible to save Christmas but be careful, don't put coal in his bag or it will ruin the other gifts and Santa will get very mad."
         android:textSize="20sp"
         android:paddingTop="15sp"
         android:gravity="center"
