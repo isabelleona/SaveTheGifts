@@ -14,7 +14,8 @@
         android:layout_height="wrap_content"
         android:fontFamily="cursive"
         android:text="Save the Gifts"
-        android:textSize="50sp" />
+        android:textSize="50sp"
+        android:textColor="#000000"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -24,15 +25,17 @@ that are now flying around! Earn as many points to become Elf of the Year, but b
 want to catch coal or else Santa is going to get mad."
         android:textSize="20sp"
         android:paddingTop="15sp"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:textColor="#000000"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Press down: move Left - Release: move Right"
+        android:text="Press down: move Rigth - Release: move Left"
         android:fontFamily="cursive"
         android:textSize="22sp"
-        android:paddingTop="20sp"/>
+        android:paddingTop="20sp"
+        android:textColor="#000000"/>
 
     <TableLayout
         android:layout_width="wrap_content"
@@ -60,26 +63,29 @@ want to catch coal or else Santa is going to get mad."
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="10 points"
-                android:textSize="15sp"
+                android:textSize="20sp"
                 android:fontFamily="cursive"
                 android:paddingRight="20dp"
-                android:paddingLeft="20dp"/>
+                android:paddingLeft="20dp"
+                android:textColor="#000000"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="20 points"
-                android:textSize="15sp"
+                android:textSize="20sp"
                 android:fontFamily="cursive"
                 android:paddingRight="20dp"
-                android:paddingLeft="20dp"/>
+                android:paddingLeft="20dp"
+                android:textColor="#000000"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="30 points"
-                android:textSize="15sp"
+                android:textSize="20sp"
                 android:fontFamily="cursive"
                 android:paddingRight="20dp"
-                android:paddingLeft="20dp"/>
+                android:paddingLeft="20dp"
+                android:textColor="#000000"/>
         </TableRow>
     </TableLayout>
 

@@ -12,10 +12,10 @@
         android:id="@+id/scoreLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="cursive"
-        android:padding="10dp"
         android:text="Score: 0"
-        android:textSize="18sp" />
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="20sp" />
 
     <FrameLayout
         android:id="@+id/frame"
@@ -27,9 +27,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:fontFamily="cursive"
-            android:text="Go!"
-            android:textColor="#4CAF50"
+            android:text="Tap to start"
+            android:textColor="#000000"
             android:textSize="54sp"
             android:textStyle="bold" />
 
